@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Escolhendo fontes</h1>
+  
+    <h2>Importação de fontes</h2>
+    <p>
+        Usando o <a href="https://fonts.google.com/">google fonts</a>, pode-se achar vários estilos de fontes. <br>Vc clica em "select family", copia o "@import" e cola logo abaixo do &lt;style&gt;
+    </p>
+
+    <h2>Baixando fontes</h2>
+    <p>
+        Um bom site é o <a href="https://www.dafont.com/pt/">Dafont</a>. Ao baixar o arquivo vc terá uma parta com outros dois arquivos (normalmente), um OTF e um TTF. Olha não vou fazer, não quero baixar, mas vou copiar em código. Adento: o cpodigo é a mesma coisa q o import, dentro do &lt;style&gt;
+    </p>
+    <pre><code>
+        @font-face {
+            font-family: 'NOME DA FONTE';
+            src: url('CAMINHO DA FONTE') format(DEPENDE DA FONTE);
+            font-weight: normal;
+            font-size: normal;
+        }
+    </code></pre>
+    <P>
+        Outra coisa, é possível colocar outra src caso vc tenha mais de uma arq na pastas como no exemplo do professor, basta separar com vírgulas. <br>Ele fala muito disso <a href="https://www.youtube.com/watch?v=3YIXnxA1kqg&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=15">nesse vídeo</a> mais especificamente no minuto 6:50
+    </P>
+
+    <h2>Capturando fontes de outros sites</h2>
+    <p>
+        Baixa uma extensões chamada Fonts Ninja, é tipo a extensão ColorZilla, só que pra fontes e n pra cores. Vc descobre todas as configurações das fontes dispostas no site, até a cor da fonte. 
+    </p>
+
+    <h2>Capturando fontes de imagens</h2>
+    <p>
+        Use o site <a href="https://www.whatfontis.com/">whatfontis</a>, selecionando a palavra com a fonte que vc quer, aumentar o contraste até deixar a fonte mais visível possível, escrever as letras da palavra e pronto. Ele te dará algumas opções parecidas
+    </p>
+    <p>
+        Entretanto, esse processo não é totalmente garantido, às vezes eles não acham nada. 
+    </p>
+
+    
+    
+</body>
+</html>

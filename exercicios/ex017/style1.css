@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body{
+    font-family: Verdana, Tahoma, sans-serif;
+
+
+    font-size: 1.2em;
+    /*
+    Medidas absolutas: cm, mm, px, pt, pc;
+    Medidas Relativas: em, ex, rem, vw, vh, %;
+    Recomendações: px, em (principipalmente esse, em)
+    16px = 1em
+    */
+    
+    font-weight: ;
+    /*lighter, normal, bold, bolder, ou em forma numérica, de 100 a 900. Não são todas as fontes que suportam essas variações*/
+
+    font-style: ;
+    /*Itálico*/
+
+    text-decoration: ;
+    /*Sublinhado*/
+
+    text-align: justify;
+    text-indent: 30px;
+
+    /*No lugar de escrever tudo isso, basta fazer essa linha só:
+    font: font-style font-weight font-size font-family
+    Tudo nessa ordem(n precisa colocar todos se n tiver utilidade), colocando o nome/tipo de cada um desses aspéctos*/
+}
+
+/*Várias opções de fontes para diferentes maquinas. Tenata com a primeria, depois com a segunda e assim por diante*/
+
+h1, h2{
+    font: bold 2em 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    text-align: center;
+}

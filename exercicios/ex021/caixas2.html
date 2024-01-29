@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(77, 75, 75);
+            padding: 4px;
+            margin: auto;
+            text-align: center;
+        }
+        nav > a{
+            color: white;
+            text-decoration: none;
+            margin-right: 50px;
+            display: inline-block;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+            border-radius: 5px 25px;
+        }
+
+        article > aside{
+            background-color: rgb(214, 212, 212);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: auto;
+            padding: 2px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section>
+            <p>Primeira section</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ab placeat soluta distinctio, voluptas eligendi cumque deleniti deserunt repellendus nostrum, odit laudantium fugit at, id mollitia quae ut doloribus consectetur!</p>
+        </section>
+        <section>
+            <article>
+                <h2>Notícias</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus similique, esse ut consectetur illo voluptates quasi eveniet iusto deserunt tenetur nemo qui expedita veniam est obcaecati totam maiores sunt quibusdam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, odio vero voluptatibus fuga molestias ad nisi voluptate excepturi iste placeat debitis doloremque ab ipsa. Ullam accusantium quibusdam sint corporis atque.
+                </p>
+                <aside>
+                    <p>Escrito por Fulano</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Siclana</p>
+    </footer>
+    
+</body>
+</html>

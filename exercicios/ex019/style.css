@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(199, 240, 199);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(0, 54, 21);
+}
+
+/*
+em HTML é id, em CSS é #
+em HTML é class, em CSS é .
+
+Um ID é usado apenas para um elemento, se vc quiser fazer um seletor com mais de um elemento usa-se a class
+
+É possível aplicar mais de uma classe a um mesmo elemento, fazendo apenas, por exemplo: "h1 class= "principal destaque"", para o caso que houver uma classe destaque
+
+No caso de adicionar uma classe a um elemento que possui um ID, as configurações do ID sobrepoem a classe
+*/
+
+#principal{
+    text-align: center;
+    background-color: rgb(27, 170, 75);
+    color: white;
+}
+
+h2{
+    color: rgb(5, 115, 5);
+}
+
+p{
+    text-align: justify;
+}
+
+.basico{
+    color: rgb(41, 169, 41);
+}
+
+.int{
+    color: rgb(214, 214, 86);
+
+}
+
+.avan{
+    color: rgb(188, 76, 76);
+}

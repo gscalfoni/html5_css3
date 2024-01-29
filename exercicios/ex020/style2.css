@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*
+
+# = ID
+. = class
+: = pseudo-class
+:: = pseudo-elemento
+> = filho
+
+*/
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: red;
+    text-decoration: none;
+
+}
+
+a:visited{
+    color: darkred;
+}
+
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+a::after{
+    content: ' [link]';
+    text-decoration: none;
+    color: rgb(190, 185, 185);
+
+}
+
+
+
+
+

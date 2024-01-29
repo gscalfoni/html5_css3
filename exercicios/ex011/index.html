@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Imagen dinâmicas</h1>
+    <p>
+        O uso de imgs dinamicas permite q seu site seja vizualizado rm vários dispositivos diferentes. Usaremos agora a tag &lt;picture&gt;. <br>
+        Nesse exercício, são usadas três imgs, de 300px, de 700px, e de 1000px
+    </p>
+    <p>
+        Dentro dessa tag, criaremos outra, &lt;source:media:type&gt;: <br>
+        <pre>
+            <code>
+                &lt;source media="(max-width: 1020px)" 
+                srcset="LINK DA IMAGEM"
+                type="image/png"&gt;
+            </code>
+        </pre>
+    </p>
+
+    <picture>
+
+        <source media="(max-width: 740px)" srcset="https://github.com/gustavoguanabara/html-css/blob/master/exercicios/modulo-01/ex011/imagens/foto-p.png?raw=true" type="image/png">
+        
+        <source media="(max-width: 1040px)" srcset="https://github.com/gustavoguanabara/html-css/blob/master/exercicios/modulo-01/ex011/imagens/foto-m.png?raw=true" type="image/png">
+        
+        <img src="https://github.com/gustavoguanabara/html-css/blob/master/exercicios/modulo-01/ex011/imagens/foto-g.png?raw=true" alt="Imagem grande">
+
+    </picture>
+
+
+    <h1>Audios e podcasts</h1>
+    <P>
+        Agora para audio é até bem parecido. Como eu n quero baixar um audio, tirei print da tela dele e vou escrever o que fazer.
+    </P>
+    <img src="Screenshot 2024-01-17 170528.png" alt="Print da aula">
+    <p>
+        Basicamente, usa-se a tag <code>&lt;audio preload = "metadata" autoplay controls&gt;</code> para definir que ele n dele ser todod carregado, que o play é automático, e que se deve mostrar os controles e tempo de audio, respectivamente.
+    </p>
+    <p>
+        Usa-se o <code>&lt;source src = "CAMINHO DO AUDIO" type = "audio/TIPO DO AUDIO"&gt;</code> para dizer quais tipos de audio estão deisponíveis, caso dispositivos que suportam diferentes tipos usem o site. A preferencia é de cima para baixo.
+    </p>
+
+    <h1>Vídeos</h1>
+    <p>
+        Novamente n vou baixar um vídeo, me mama. Assim como audios, é melhor q ele tenha vários tipos para suporte a vários navegadores
+    </p>
+    <p>
+        Essa é a aula 34, onde ele fala bastante do HandBrake, que pode decodificar em outro tipo de arquivo e também diminuir o tamanho dele. <br>Não hospede um vídeo muito grande no seu próprio site, pesa e é caro, ou seja, é custoso de todas as formas
+    </p>
+
+    <h2>Vídeos hospedados localmente</h2>
+    <p>
+        Da mesma forma que audios, usamos: <br><code>&lt;video width = "500" poster = "CAMINHO PARA A CAPA DO VIDEO" controls&gt;, com width sendo o tamanho do vídeo no site e poster uma capa não obrigatória que vc queria colocar</code> <br>
+        <code>&lt;source src = "CAMINHO DO VIDEO" type = "video/TIPO DO AUDIO"&gt;</code><br>
+    </p>
+    <p>
+        Podemos, q nem com os audios, oferecer várias opções, com prioridade de cima para baixo.
+    </p>
+
+    <h2>Vídeos de hospedagem externa</h2>
+    <p>
+        Esse eu vou fazer pq n tem que baixar nada. Por exemplo, o vídeo do guanabara. Vc vai em compartilhar, incorporar, copiar o código e colar no hatl. Shablau!
+    </p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=D1tb5TXh8J4SmXD1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>

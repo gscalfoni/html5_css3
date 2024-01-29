@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+
+    <style>
+        p#p1{
+            width: 300px;
+            text-align: center;
+            align-self: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+            /*margin é para deixar as coisas centralizadas, é como o texto se conporta no bloco body*/
+            margin: auto;
+            
+            /*Border é a borda*/
+            border-width: 5px;
+            border-style: dashed;
+            border-color: red;
+            
+            /*padding é o acolchoamento entre o texto e a borda*/
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+
+        }
+
+        p#p2{
+
+            width: 300px;
+            text-align: center;
+            align-self: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            border: 5px dashed red;
+            padding: 20px;
+            margin: auto;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Modelo de caixas</h1>
+    <h2>O que é</h2>
+    <p>
+        Todo elemnto visível em HTML é uma caixa
+    </p>
+    <p>
+        É possível aninhar os conteudos, uma caixa dentro de outra.
+    </p>
+
+    <h2>Tipos de caixa</h2>
+    <h3>Box-level</h3>
+    <p>
+        Uma nova caixa sempre se inicia em uma linha nova e ocupa a largura total da tela. <br>EX: DIV, H, P, MAIN, HEADER, NAV, ARTICLE, ASIDE, FOOTER, FORM, VIDEO.
+    </p>
+
+    <h3>Inline-level</h3>
+    <p>
+        Não pular pra próxima linha e não opupa o tamanho inteiro. <br>EX: SPAN, A, CODE, SMALL, STRONG, EM, LABEL, BUTTON, INPUT, SELECT.
+    </p>
+    
+    <p id = 'p1'>
+        Para mais infomações, acesse a <a href="https://www.youtube.com/watch?v=rXF1okX0v9E&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=24">vídeo aula</a>, onde ele explica bem bonitinho algumas coisas de margem e afins
+    </p>
+    <br>
+    <p id="p2">
+        Agora, ele ensina a simplificar todos esses comandos, assim como ele fez com o texto.
+    </p>
+    
+</body>
+</html>
