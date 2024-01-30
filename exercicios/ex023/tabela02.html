@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas 2.0</title>
+
+    <style>
+        table{
+            width: 400px;
+            height: 50px;
+            border-collapse: collapse;
+
+            /*Cabeçalho fixo*/
+            position: relative;
+        }
+
+        /*Cabeçalho fixo*/
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color:  rgba(52, 52, 52, 0.997);
+        }
+
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: rgba(52, 52, 52, 0.997);
+            color: white;
+        }
+
+        /*EFEITO ZEBRADO USA-SE A SUBCLASSE :nth-child(Xn)*/
+        tbody > tr:nth-child(2n){
+            background-color: rgb(185, 185, 185);
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes: Semântica da tabela, semântica dos títulos, efeito zebrado</h1>
+    
+    <table>
+        <caption>População do Sudeste</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>SP</td>
+                <td>45 000 000</td>
+            </tr>
+            <tr>
+                <td>MG</td>
+                <td>21 000 000</td>
+            </tr>
+            <tr>
+                <td>RJ</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>ES</td>
+                <td>4 000 000</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes:</th>
+                <td><strong>87 000 000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

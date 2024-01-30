@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas 5.0</title>
+
+    <style>
+        table{
+            width: 400px;
+            height: 50px;
+            border-collapse: collapse;
+
+            /*Cabeçalho fixo*/
+            position: relative;
+        }
+
+        /*Cabeçalho fixo*/
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color:  rgba(52, 52, 52, 0.997);
+        }
+
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: rgba(52, 52, 52, 0.997);
+            color: white;
+        }
+
+
+        col.c_popul{
+            background-color: greenyellow;
+        }
+
+        col.c_estado{
+            background-color: rgb(129, 129, 176);
+        }
+    </style>
+</head>
+<body>
+    <h1>Colgrouo</h1>
+    
+    <table>
+        <caption>População do Sudeste</caption>
+
+
+        <colgroup>
+            <col class="c_estado">
+            <col class="c_popul">
+        </colgroup>
+
+
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>SP</td>
+                <td>45 000 000</td>
+            </tr>
+            <tr>
+                <td>MG</td>
+                <td>21 000 000</td>
+            </tr>
+            <tr>
+                <td>RJ</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>ES</td>
+                <td>4 000 000</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes:</th>
+                <td><strong>87 000 000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

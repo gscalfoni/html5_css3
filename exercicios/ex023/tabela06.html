@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Reponsival</title>
+
+    <style>
+        table{
+            width: 500px;
+            height: 100px;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            width: 100px;
+        }
+        div#conteiner{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Tabela de Números Aleatórios</h2>
+
+    <div id="conteiner">
+        <table>
+            <thead>
+                <tr>
+                    <th>Mês</th>
+                    <!-- Adicione colunas para cada mês -->
+                    <th>Janeiro</th>
+                    <th>Fevereiro</th>
+                    <th>Março</th>
+                    <th>Abril</th>
+                    <th>Maio</th>
+                    <th>Junho</th>
+                    <th>Julho</th>
+                    <th>Agosto</th>
+                    <th>Setembro</th>
+                    <th>Outubro</th>
+                    <th>Novembro</th>
+                    <th>Dezembro</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaCorpo">
+                <!-- Linhas serão adicionadas dinamicamente pelo JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Função para gerar um número aleatório entre 1 e 100
+        function gerarNumeroAleatorio() {
+            return Math.floor(Math.random() * 100) + 1;
+        }
+
+        // Obtém a referência do corpo da tabela
+        var tabelaCorpo = document.getElementById('tabelaCorpo');
+
+        // Gera 10 linhas representando 10 dias
+        for (var i = 1; i <= 10; i++) {
+            var novaLinha = document.createElement('tr');
+            novaLinha.innerHTML = '<td>Dia ' + i + '</td>';
+
+            // Gera números aleatórios para cada mês
+            for (var j = 1; j <= 12; j++) {
+                novaLinha.innerHTML += '<td>' + gerarNumeroAleatorio() + '</td>';
+            }
+
+            // Adiciona a nova linha ao corpo da tabela
+            tabelaCorpo.appendChild(novaLinha);
+        }
+    </script>
+
+</body>
+</html>
