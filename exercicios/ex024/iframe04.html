@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança de iframes</title>
+</head>
+<body>
+
+    <h1>Segurança de iframes</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti deserunt maiores eos voluptatibus voluptate laborum voluptatem, facere quisquam dolor quidem minima, est laudantium commodi asperiores sint, sunt tenetur placeat excepturi?</p>
+
+    <iframe src="pag02.html" frameborder="1" sandbox="sandbox" referrerpolicy="no-referrer">
+        Página indisponível ao navegador
+    </iframe>
+
+    <p>
+        Para tornar mais seguro, faça: <code> 
+            <pre>
+    &lt;iframe scr = "PAGINA DO IFRAME" frameborder="1" 
+    sandbox="sandbox"
+    referrerpolicy="no-referrer" 
+            </pre>
+        </code> 
+
+        Essa configução de sandbox e de referrerpolicy é o nível mais alto de proteção possível, podendo mudar algumas configurações quando necessário. Veja isso <a href="https://www.youtube.com/watch?v=mRhjlDN4Ezo&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=8">aqui</a>.
+    </p>
+
+    <p>
+        De qualquer forma, iframes são muitos usado ainda hj em incorporação de código. O <a href="https://vimeo.com/">Vimeo</a>, o <a href="https://www.google.com.br/maps/@-20.2708626,-40.278214,14z?entry=ttu">Maps</a> e o <a href="https://www.google.com.br/maps/@-20.2708626,-40.278214,14z?entry=ttu">Waze</a> são exemplos de sites que utilizam iframes quando incorporados em sites de terceiros 
+    </p>
+    <p>
+        Até o google docs usa iframes, clicando em "Arquivo", depois "publicar na web" e então "incorporar"
+    </p>
+
+</body>
+</html>

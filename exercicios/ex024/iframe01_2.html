@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+
+    <style>
+        iframe{
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Testando iframes 2.0</h1>
+    
+    <p>É possível configural um link, caso o iframe não seja compatível com o navegador/ não abra</p>
+
+    <iframe src="https://www.cursoemvideo.com/" frameborder="1">
+        <a href="https://www.cursoemvideo.com/">site do curso em vídeo</a>
+    </iframe>
+
+    <p>Também é possível configurar o tamanho deles. Por padrão eles tem tamanho de 300x150. Vc muda isso com CSS, assim como adicionar bordar e o parâmetro de scrolling.</p>
+
+    <p>
+        iframe é diferente de frame, sendo esse último não recomendado usar.
+    </p>
+    
+    <p>
+        De qualquer forma, os algoritmos de busca do Google "não gostam" de iframes (conteudos indexados), o bot tem dificuldade de filtrar o seu conteudo. <br>Também há probelmas de acessibilidade e navegação, além de questões de segugança, cuidado para quem vc "abre a porta", qual site vc usa no seu iframe, eles podem ser "maus".
+    </p>
+</body>
+</html>
