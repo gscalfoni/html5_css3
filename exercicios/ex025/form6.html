@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario: cor, range e file</title>
+</head>
+<body>
+
+    <fieldset>
+        <form action="" method="post" autocomplete="on">
+            <p>
+                <label for="cor">Escolha a cor: </label>
+                <input type="color" required name="cor" id="cor">
+            </p>
+            <p>
+                <label for="nivel">Nível: </label>
+                <input type="range" name="nivel" id="nivel">
+            </p>
+            <p>
+                <label for="foto">Foto: </label>
+                <input type="file" name="foto" id="foto">
+
+                <p>
+                    Sempre que for mandar um arquivo, o method precisar ser POST, pq o get é só até 3000 bytes
+                </p>
+            </p>
+        </form>
+    </fieldset>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" name="li" id="li" value="Limpar">
+    </p>
+
+</body>
+</html>
