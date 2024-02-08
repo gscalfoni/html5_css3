@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario: output 3.0 + JS</title>
+</head>
+<body>
+
+    <form action="" method="post">
+        <p>
+            <label for="nasc">Ano do nascimento: </label>
+            <input type="number" name="nasc" id="nasc"
+            oninput="idade()">
+        </p>
+        <p>
+            <label for="out">Resultado:</label>
+            <br>
+            <output id="out"></output>
+        </p>
+    </form>
+
+    <script>
+        function idade(){
+            let hoje = new Date().getFullYear()
+            out.innerHTML = Number(hoje) - Number(nasc.value) + " anos"
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario: output</title>
+</head>
+<body>
+
+    <form action="" method="post">
+        <p>
+            <label for="n1">Número 1: </label>
+            <input type="number" name="n1" id="n1" min="0" max="50" required
+            oninput="out.innerHTML = Number(n1.value) + Number(n2.value)">
+        </p>
+
+        <p>
+            <label for="n2">Número 2: </label>
+            <input type="number" name="n2" id="n2" min="0" max="50" required
+            oninput="out.innerHTML = Number(n1.value) + Number(n2.value)">
+        </p>
+
+        <p>
+            <label for="resul">Soma: </label>
+            <output name="out" id="out">0</output>
+        </p>
+        <p>
+            O output não é para enviar nada, é apenas para momentaneamente mostrar um resultado na tela
+        </p>
+    </form>
+    
+</body>
+</html>
