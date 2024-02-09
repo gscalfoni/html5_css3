@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Site de exemplo</h1>
+        <i id = "burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+
+        <menu id="menu">
+            <ul>
+                <li><a href="#">OP1</a></li>
+                <li><a href="#">OP2</a></li>
+                <li><a href="#">OP3</a></li>
+                <li><a href="#">OP4</a></li>
+            </ul>
+        </menu>
+
+    </header>
+
+    <main>
+        <h2>Inicio do artigo</h2>
+        <article>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla ipsum blanditiis incidunt iure necessitatibus aperiam obcaecati labore quia quam adipisci, in earum animi cum expedita doloribus. Nihil odio ducimus doloribus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, debitis. Accusamus quae sapiente porro ipsam modi iusto cumque suscipit libero perspiciatis debitis perferendis, quidem provident maxime necessitatibus deleniti similique laboriosam.
+            </p>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe asperiores ut natus voluptatibus aliquid eum odio maxime exercitationem accusantium distinctio. Distinctio, tempore nihil! Esse fugiat culpa dolore? Consectetur, minima voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempore quibusdam enim sed id, quam consectetur autem? Consectetur beatae minima asperiores, repellendus ipsam commodi amet dolore suscipit. Minima, iste veniam?
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse pariatur laborum ipsam, aut dolore aperiam. Aliquid corporis quibusdam obcaecati! Ipsam eius cumque accusamus voluptatem quos soluta similique molestias placeat ipsum?
+            </p>
+        </article>
+    </main>
+
+
+    <script>
+
+        //Como fazer q o menu aparece e desaparece com um click. É SÓ USAR IF ELSE
+        function clickMenu(){
+            let i = document.getElementById("menu")
+
+            if (i.style.display == "block"){
+                i.style.display = "none"
+
+            }
+            else{
+                i.style.display = "block"
+
+            }
+        }
+    </script>
+    
+</body>
+</html>
