@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
 
     <header>
         <h1>Site de exemplo</h1>
@@ -57,6 +58,17 @@
             else{
                 i.style.display = "block"
 
+            }
+        }
+
+        function mudouTamanho(){
+            let i = document.getElementById("menu")
+
+            if (window.innerWidth >=768){
+                i.style.display = "block"
+            }
+            else{
+                i.style.display = "none"
             }
         }
     </script>
